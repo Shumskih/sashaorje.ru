@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700&display=swap);@charset "UTF-8";
 
 @font-face {
   font-family: "PorticoDiablo";
@@ -28,6 +28,111 @@
 @font-face {
   font-family: "PorticoDistortedOblique";
   src: url("/fonts/Portico Distorted Oblique.otf?2ee646fc7d340ac13dc052f7ce8ba2af");
+}
+
+@font-face {
+  font-family: "PorticoIndiagonal";
+  src: url("/fonts/Portico Indiagonal.otf?7024a4506edf3fa92c008a8433852416");
+}
+
+@font-face {
+  font-family: "PorticoLayer";
+  src: url("/fonts/Portico Layer.otf?d3857eb1b731893647de4449876e1676");
+}
+
+@font-face {
+  font-family: "PorticoLayerOblique";
+  src: url("/fonts/Portico Layer Oblique.otf?2d89aa09961920f63d448869e3401b45");
+}
+
+@font-face {
+  font-family: "PorticoLight";
+  src: url("/fonts/Portico Light.otf?e28e24ee64de608009291a3e42bf7593");
+}
+
+@font-face {
+  font-family: "PorticoLightOblique";
+  src: url("/fonts/Portico Light Oblique.otf?09a55ca13a78c9bcd8d51168db787ab3");
+}
+
+@font-face {
+  font-family: "PorticoLightRough";
+  src: url("/fonts/Portico Light Rough.otf?1ad3f182b3efb53e82a6efd6ffcb8336");
+}
+
+@font-face {
+  font-family: "PorticoOblique";
+  src: url("/fonts/Portico Oblique.otf?a2871e38c4f1b55e990edbe4358ed30d");
+}
+
+@font-face {
+  font-family: "PorticoOutline";
+  src: url("/fonts/Portico Outline.otf?678745b74c4231a77664ef4f19c1a1fb");
+}
+
+@font-face {
+  font-family: "PorticoRegular";
+  src: url("/fonts/Portico Regular.otf?f662e6e0de419fe0903e635002fa6788");
+}
+
+@font-face {
+  font-family: "PorticoRough";
+  src: url("/fonts/Portico Rough.otf?c29e918f0ef58ace00df1ba52919d6fd");
+}
+
+@font-face {
+  font-family: "PorticoRoughOblique";
+  src: url("/fonts/Portico Rough Oblique.otf?4d83a0f5cf85c7bc328b3c0b0306d37b");
+}
+
+@font-face {
+  font-family: "PorticoRounded";
+  src: url("/fonts/Portico Rounded.otf?93696be36167179a689418295ad55828");
+}
+
+@font-face {
+  font-family: "PorticoRoundedOblique";
+  src: url("/fonts/Portico Rounded Oblique.otf?7e89d86453ec48bdf394b7cf3ec21c0c");
+}
+
+@font-face {
+  font-family: "PorticoShadow";
+  src: url("/fonts/Portico Shadow.otf?4d5b0ef5a7134e182e6750230fb035a0");
+}
+
+@font-face {
+  font-family: "PorticoStencil";
+  src: url("/fonts/Portico Stencil.otf?36350fa7d3cc1bbe9edc3ffb6d984520");
+}
+
+@font-face {
+  font-family: "PorticoStencilOblique";
+  src: url("/fonts/Portico Stencil Oblique.otf?c3746360392351507ace0ae372f25c9d");
+}
+
+@font-face {
+  font-family: "PorticoStencilRough";
+  src: url("/fonts/Portico Stencil Rough.otf?e31124e0ee11c3a0f99e1db4b61ffea3");
+}
+
+@font-face {
+  font-family: "PorticoUrban";
+  src: url("/fonts/Portico Urban.otf?8144092448a6786dfd2d2183240065f0");
+}
+
+@font-face {
+  font-family: "PorticoUrbanOblique";
+  src: url("/fonts/Portico Urban Oblique.otf?166f00d6364feadfe040174a2ea20c76");
+}
+
+@font-face {
+  font-family: "PorticoUrbanRough";
+  src: url("/fonts/Portico Urban Rough.otf?1243dacb3babe5818640c231ad948e72");
+}
+
+@font-face {
+  font-family: "PorticoVintage";
+  src: url("/fonts/Portico Vintage.otf?a4363fe022ff0ac8c7bc235b6daba59f");
 }
 
 /*!
@@ -11130,9 +11235,14 @@ a.text-dark:focus {
   }
 }
 
+html,
 body {
   width: 100vw;
   height: 100vh;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
   background-image: url("/images/quest pistols.jpg?3affd1a21d1312d8f81a2513d87dce6d");
   background-color: #000d2f;
   background-repeat: no-repeat;
@@ -11155,6 +11265,7 @@ ul li:last-of-type {
 li a {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 a {
@@ -11164,7 +11275,32 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #636b6f;
+  padding-bottom: 0.2rem;
+  color: #ffffff;
+  border-bottom: 3px solid #39c686;
+}
+
+h1 {
+  font-size: 6.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 3.44rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.32rem;
+  letter-spacing: 0.63rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h4,
+h6 {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .header {
@@ -11191,6 +11327,13 @@ a:hover {
 
 .title {
   font-family: PorticoDiagonal, monospace;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.title a:hover {
+  border-bottom: none;
 }
 
 .title-name {
@@ -11284,6 +11427,20 @@ a:hover {
 
 .playlist-arrow:hover {
   fill: rgba(255, 255, 255, 0.7);
+}
+
+.song-cover {
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 1.9rem 1.25rem 0.3rem #111111;
+}
+
+.song-cover__category span {
+  text-transform: uppercase;
+  border-bottom: 0.19rem solid #39c686;
 }
 
 a,

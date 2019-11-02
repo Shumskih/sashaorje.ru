@@ -12,7 +12,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -117,6 +117,14 @@
             </g>
         </svg>
     </div>
+    <section class="song-cover">
+        <div class="song-cover__category mb-3">
+            <span>Dubstep</span>
+        </div>
+        <h1 class="song-cover__title mb-4">Мокрая</h1>
+        <h4 class="song-cover__author mb-4">Quest Pistols Show и Monatik</h4>
+        <h6 class="song-cover__remix-author">Sasha Orje Trap Chillout Remix</h6>
+    </section>
 </main>
 <footer class="footer"></footer>
 </body>
