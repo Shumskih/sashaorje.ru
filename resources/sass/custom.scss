@@ -1,0 +1,161 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/quest pistols.jpg');
+    background-color: #000d2f;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin-right: 20px;
+}
+ul li:last-of-type {
+    margin-right: 0;
+}
+li a {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+}
+a {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+a:hover {
+    text-decoration: none;
+    color: #636b6f;
+}
+.header {
+    position: relative;
+    background-color: rgba(17, 17, 17, 0.4);
+    height: 8vh;
+}
+
+.header::after {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    height: 1px;
+    width: 100%;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    z-index: 1;
+}
+
+.nav {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+}
+
+.title {
+    font-family: PorticoDiagonal, monospace;
+}
+
+.title-name {
+    color: white;
+}
+
+.title-surname {
+    color: #8CC6D7;
+}
+
+.links {
+
+}
+
+.main {
+    position: relative;
+    height: 92vh;
+}
+
+.video-previews {
+    position: relative;
+    background-color: rgba(17, 17, 17, 0.4);
+    width: 12vw;
+}
+
+.video-previews::before {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    height: 100%;
+    width: 1px;
+    content: '';
+    z-index: 1;
+    right: 0;
+}
+
+.image-preview {
+    position: relative;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.image-preview:hover {
+    border: 1px solid #636b6f;
+    border-radius: 3%;
+}
+.preview {
+    border-radius: 3%;
+}
+
+.youtube-icon {
+    position: absolute;
+    top: 35%;
+    right: 43%;
+}
+.play-icon {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 45%;
+    right: 41%;
+    border-radius: 150px;
+    text-align: center;
+    font-size: 20px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 0;
+    margin-left: 0;
+    border: 6px solid rgba(255, 255, 255, 0.45);
+    color: #ffffff;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+        border: 6px solid rgba(255, 255, 255, 0.7);
+    }
+
+    &--arrow {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: 35%;
+        left: 40%;
+    }
+}
+
+.playlist-arrow {
+    width: 20px;
+    height: 20px;
+    fill: rgba(255, 255, 255, 0.45);
+    cursor: pointer;
+
+    &:hover {
+        fill: rgba(255, 255, 255, 0.7);
+    }
+}
+
+a,
+.playlist-arrow,
+.play-icon,
+.image-preview {
+    transition-duration: 250ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
